@@ -8,6 +8,7 @@ class HomeController < ApplicationController
 		Resque.enqueue(SendBackgroundEmail, current_user.email, params)
 		redirect_to root_url, notice: "Email sent"
 	end 
+	########REAL TIME METHOD TO SEND EMAIL, WE HAVE NOW MOVED IT TO  A BACKGROUND JOB ##########
 	# # POST to send_email
 	# def send_email
 	# 	email_to = params["email_destination"]
