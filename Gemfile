@@ -12,6 +12,7 @@ gem 'dotenv-rails'
 gem 'pry-rails'
 gem 'devise'
 gem 'redis'
+gem 'mail'
 
 # gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
 
